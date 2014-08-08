@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr-FR" ng-app="adminPon">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pon Admin</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+
+	<script src="components/app.js"></script>
+	<script src="components/config.js"></script>
+	<script src="components/accueil/controller.js"></script>
+	<script src="components/posts/controller-posts.js"></script>
+	<script src="components/post-modifier/controller-post-modifier.js"></script>
+	<script src="components/post-creer/controller-post-creer.js"></script>
+	<script src="components/services/service-post.js"></script>
+	<script src="components/categories/controller-categories.js"></script>
+	<script src="components/services/service-categorie.js"></script>
+	<script src="components/categorie/controller-categorie.js"></script>
+	<script src="components/categorie-creer/controller-categorie-creer.js"></script>
+
+</head>
+<body>
+	
+
+<div class="container ">
+	<div class="row">
+
+		<div class="col-lg-2 color-midnight colonne">
+			<ul>
+				<li><a href="#/accueil">Accueil</a></li>
+				<li><a href="#/posts">Posts</a></li>
+				<li><a href="#/categories">Catégories</a></li>
+				<li><a href="#/medias">Médias</a></li>
+				<li></li>
+			</ul>
+		</div>
+
+		<div class="col-lg-10 color-belize">
+			<div ui-view></div>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>

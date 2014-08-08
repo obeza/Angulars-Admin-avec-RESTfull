@@ -1,0 +1,13 @@
+<h2>{{ titre }}</h2>
+
+<a href="#/categorie/creer"
+<button type="button" class="btn btn-default">
+  <span class="glyphicon glyphicon-plus"></span> Ajouter
+</button>
+</a>
+
+<div class="list-group">
+  <a href="#/categorie/{{categorie.id}}" class="list-group-item" ng-repeat="categorie in categories">
+  	{{categorie.titre}}
+  </a>
+</div>

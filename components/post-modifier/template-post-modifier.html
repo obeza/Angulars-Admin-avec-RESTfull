@@ -1,0 +1,29 @@
+<div class="row">
+
+	<div class="col-lg-10">
+		<h1>{{ msg }}</h1>
+
+		<form role="form" ng-submit="modifier()">
+		  <div class="form-group">
+		    <label for="titre">Titre</label>
+		    <input type="text" class="form-control" id="titre" placeholder="Un titre" required ng-model="article.titre">
+		  </div>	
+		  <div class="form-group">
+		    <label for="corps">Titre</label>
+		    <textarea class="form-control" id="corps" ng-model="article.corps" rows="10"></textarea>
+		  </div>
+		   <button type="submit" class="btn btn-default" >Modifier</button>
+
+		</form>
+
+	</div>
+
+	<div class="col-lg-2 color-clouds">
+		<div class="checkbox" ng-repeat="categorie in categories">
+    		<label ng-click="ajouterCategorie(categorie.id)">
+      			<input type="checkbox" >{{categorie.titre}}
+    		</label>
+  		</div>
+	</div>
+
+</div>

@@ -1,0 +1,14 @@
+<h2>{{ titre }}</h2>
+
+
+<a href="#/post/creer"
+<button type="button" class="btn btn-default">
+  <span class="glyphicon glyphicon-plus"></span> Ajouter
+</button>
+</a>
+
+<div class="list-group">
+  <a href="#/post/{{article.id}}" class="list-group-item" ng-repeat="article in articles">
+  	{{article.titre}}
+  </a>
+</div>
